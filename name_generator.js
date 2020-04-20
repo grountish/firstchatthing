@@ -2,7 +2,7 @@ const ADJECTIVES = [
     'Abrasive', 'Brash', 'Callous', 'Daft', 'Eccentric', 'Fiesty', 'Golden',
     'Holy', 'Ignominious', 'Joltin', 'Killer', 'Luscious', 'Mushy', 'Nasty',
     'OldSchool', 'Pompous', 'Quiet', 'Rowdy', 'Sneaky', 'Tawdry',
-    'Unique', 'Vivacious', 'Wicked', 'Xenophobic', 'Yawning', 'Zesty',
+    'Unique', 'Vivacious', 'Wicked', 'Zeno', 'Yawning', 'Zesty',
 ];
 
 const FIRST_NAMES = [
