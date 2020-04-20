@@ -1,6 +1,6 @@
 const Router = require('express').Router;
 
-const {registerBind, sendNotification} = require('./notification_handler');
+//const {registerBind, sendNotification} = require('./notification_handler');
 const tokenGenerator = require('./token_generator');
 const config = require('./config');
 
@@ -53,7 +53,7 @@ router.get('/config', (req, res) => {
 router.post('/messenger_auth', function(req, res) {
   //Extract the request received from Facebook
   const message = req.body.entry[0].messaging[0];
-  console.log(message);
+ // console.log(message);
   // Set user identity using their fb messenger user id
   const identity = message.sender.id;
   //Let's create a new facebook-messenger Binding for our user
@@ -70,7 +70,7 @@ router.post('/messenger_auth', function(req, res) {
 
 //Verification endpoint for Facebook needed to register a webhook.
 router.get('/messenger_auth', function(req, res) {
-  console.log(req.query["hub.challenge"]);
+//  console.log(req.query["hub.challenge"]);
   res.send(req.query["hub.challenge"]);
 });
 
